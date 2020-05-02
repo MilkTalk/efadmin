@@ -16,6 +16,7 @@
         <module>efadmin-tools</module>
         <module>efadmin-generator</module>
         <module>efadmin-monitor</module>
+        <module>efadmin-pay</module>
     </modules>
 
     <name>ef-admin</name>
@@ -53,10 +54,10 @@
             <version>${ejpa.starter.version}</version>
             <type>pom</type>
             <exclusions>
-               <exclusion>
-                   <groupId>vip.efactory</groupId>
-                   <artifactId>common-i18n</artifactId>
-               </exclusion>
+                <exclusion>
+                    <groupId>vip.efactory</groupId>
+                    <artifactId>common-i18n</artifactId>
+                </exclusion>
             </exclusions>
         </dependency>
         <!-- 引入国际化的依赖 -->
@@ -67,14 +68,14 @@
         </dependency>
 
         <!--Spring boot start-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-data-jpa</artifactId>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-web</artifactId>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-data-jpa</artifactId>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-web</artifactId>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -277,16 +278,16 @@
         </plugins>
     </build>
 
-<!--    <repositories>-->
-<!--        <repository>-->
-<!--            <id>public</id>-->
-<!--            <name>aliyun nexus</name>-->
-<!--            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
-<!--            <releases>-->
-<!--                <enabled>true</enabled>-->
-<!--            </releases>-->
-<!--        </repository>-->
-<!--    </repositories>-->
+    <!--    <repositories>-->
+    <!--        <repository>-->
+    <!--            <id>public</id>-->
+    <!--            <name>aliyun nexus</name>-->
+    <!--            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
+    <!--            <releases>-->
+    <!--                <enabled>true</enabled>-->
+    <!--            </releases>-->
+    <!--        </repository>-->
+    <!--    </repositories>-->
 
     <pluginRepositories>
         <pluginRepository>
