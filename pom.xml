@@ -17,9 +17,10 @@
         <module>efadmin-generator</module>
         <module>efadmin-monitor</module>
         <module>efadmin-pay</module>
+        <module>efadmin-eflow</module>
     </modules>
 
-    <name>ef-admin</name>
+    <name>efadmin</name>
     <url>http://efactory.vip</url>
 
     <parent>
