@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
- * 此处这么写是为了破解循环引用,MultiTenantJpaConfiguration与ISystemTenantService相互依赖
+ * 此处这么写是为了破解循环引用,MultiTenantJpaConfiguration与ITenantService相互依赖
  */
 @AllArgsConstructor
 @Component
