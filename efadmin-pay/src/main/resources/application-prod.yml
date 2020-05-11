@@ -1,0 +1,12 @@
+logging:
+    level:
+        root: INFO
+
+server:
+    port: 8080
+    session-timeout: 60
+    tomcat:
+        max-threads: 100
+        uri-encoding: UTF-8
+    servlet:
+        context-path: /efadmin_pay
