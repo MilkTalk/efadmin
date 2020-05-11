@@ -1,6 +1,5 @@
-alipay:
-    notify:
-        url: https://blog.52itstyle.vip/alipay/pay
+#spring boot从控制台打印出来的日志级别只有ERROR, WARN 还有INFO，如果你想要打印debug级别的日志
+#debug=true
 logging:
     level:
         root: INFO
@@ -12,15 +11,25 @@ server:
         context-path: /
     session-timeout: 60
     tomcat:
+        # tomcat最大线程数，默认为200
         max-threads: 100
         uri-encoding: UTF-8
+    # HTTPS证书  如果不需要 https访问 注释掉即可 由于某些浏览器访问不支持
+    #ssl:
+      #key-store: classpath:keystore.p12
+      #key-store-password: 123456
+      #key-store-type: PKCS12
+
 spring:
+    # dev tools
     devtools:
         livereload:
             enabled: true
     mvc:
+        # 静态文件请求匹配方式
         static-path-pattern: /**
     resources:
+        # 修改默认的静态寻址资源目录 多个使用逗号分隔
         static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,classpath:/templates/
     thymeleaf:
         cache: false
@@ -68,11 +77,16 @@ spring:
         hibernate:
             # 生产环境设置成 none，避免程序运行时自动更新数据库结构
             ddl-auto: update
+# 银联后台回调，自行替换
 unionpay:
     notify:
         url: https://blog.52itstyle.vip/union/pay
+# 微信后台回调，自行替换
 wexinpay:
     notify:
         url: https://blog.52itstyle.vip/weixin/pay
-
+# 支付宝后台回调，自行替换
+alipay:
+    notify:
+        url: https://blog.52itstyle.vip/alipay/pay
 
